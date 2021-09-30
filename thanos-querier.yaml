@@ -36,7 +36,7 @@ spec:
         - --query.replica-label=replica
         - --store=dnssrv+_grpc._tcp.thanos-receive.monitoring.svc.cluster.local
         name: thanos-querier
-        image: registry-team.smzdm.com/prometheus/thanos:v0.18.0
+        image: quay.io/thanos/thanos:v0.22.0
         livenessProbe:
           failureThreshold: 10
           httpGet:

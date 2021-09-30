@@ -104,7 +104,7 @@ spec:
         - --receive.local-endpoint=$(NAME).thanos-receive.$(NAMESPACE).svc.cluster.local:10901
         - --label=replica="$(NAME)"
         name: thanos-receive
-        image: registry-team.smzdm.com/prometheus/thanos:v0.18.0
+        image: quay.io/thanos/thanos:v0.22.0
         volumeMounts:
         - mountPath: /etc/thanos
           name: thanos-receive-config
